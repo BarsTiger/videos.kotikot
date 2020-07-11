@@ -1,0 +1,188 @@
+{
+  "settings": {
+    "name": "VIDEOS.KOTIKOT",
+    "currentPage": "videos.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.12.4",
+    "siteFonts": [
+      {
+        "css": "'Rubik', sans-serif",
+        "name": "Rubik",
+        "url": "https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i"
+      }
+    ],
+    "uniqCompNum": 5,
+    "versionPublish": "4.12.4",
+    "screenshot": "screenshot.png",
+    "imageResize": true
+  },
+  "pages": {
+    "videos.html": {
+      "settings": {
+        "main": true,
+        "title": "VIDEOS-KOTIKOT",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "P": {
+              "color": "#767676"
+            }
+          },
+          "_name": "header16",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Полный экран\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Кнопки\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#efefef\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"col-md-10 align-center\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">Все видео</h1>\n                <h3 class=\"mbr-section-subtitle mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Красивые мобильные сайты\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Тут ты можешь посмотреть все мои видео и скачать все, что надо к ним\n<br>Это \"все что надо\" находится на сайте GitHub в большом репозитории. Как скачивать оттуда, надеюсь, учить не надо. Ссылка будет на папку с файлами</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-black-outline\" href=\"quick.html\" data-app-placeholder=\"Введите Текст\" target=\"_blank\">Быстрый поиск</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "s4qwqMUnlU",
+          "_anchor": "header16-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background": "linear-gradient(45deg, @bg-value, @color2)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-figure": {
+              "@media (min-width: 992px)": {
+                "padding-left": "4rem"
+              },
+              "@media (max-width: 991px)": {
+                "padding-top": "3rem"
+              }
+            },
+            ".media-container-row": {
+              "& when (@reverseContent)": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse",
+                ".mbr-figure": {
+                  "@media (min-width: 992px)": {
+                    "padding-left": "0",
+                    "padding-right": "4rem"
+                  }
+                }
+              }
+            }
+          },
+          "_name": "header7",
+          "_customHTML": "<section class=\"header7\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Полный экран\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Кнопки\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Медиа Справа/Слева\" name=\"reverseContent\">\n\n        <input type=\"range\" inline title=\"Размер медиа\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"200\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#0f7699\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"color\" name=\"color2\" title=\"Цвет 2\" value=\"#ff7f9f\" condition=\"bg.type=='color'\" selected>\n\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n\n            <div class=\"media-content align-right\">\n                <h1 class=\"mbr-section-title mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Моды 6</h1>\n                <div class=\"mbr-section-text mbr-white pb-3\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">моды 6 - Security craft - Никто в дом не пролезет! 1.12.2 моды на русском обзор</p>\n                </div>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-primary\" href=\"https://github.com/BarsTiger/MaterialsForVideos/tree/master/Mods6\" data-app-placeholder=\"Введите Текст\" target=\"_blank\">Все, что надо</a></div>\n            </div>\n\n            <div mbr-video class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                <iframe src=\"https://www.youtube.com/watch?v=UK03BbAuNl4&loop=0&autoplay=0\"></iframe>\n            </div>\n\n        </div>\n    </div>\n</section>",
+          "_anchor": "header7-1",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "s4qwJCdeYs",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "quick.html": {
+      "settings": {
+        "meta_descr": "",
+        "title": "Быстрый поиск",
+        "order": 1
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "P": {
+              "color": "#767676"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#232323"
+            }
+          },
+          "_name": "header16",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Полный экран\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Кнопки\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"@PROJECT_PATH@/assets/images/mbr.jpg\" parallax selected>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#efefef\">\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#f7ed4a\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"col-md-10 align-center\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">Быстрый поиск</h1>\n                <h3 class=\"mbr-section-subtitle mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Красивые мобильные сайты\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Ctrl + F чтобы найти по названию. Нажми на название, чтобы перейти на страницу со всеми видео прямо на нужное видео\n<br>Древних видео на основной странице нет</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-black-outline\" href=\"https://mobirise.co\" data-app-placeholder=\"Введите Текст\">ПОДРОБНЕЕ</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "s4qx9DcRbh",
+          "_anchor": "header16-2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text, blockquote": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\"><p><a href=\"videos.html#header7-1\" target=\"_blank\">моды 6 - Security craft - Никто в дом не пролезет! 1.12.2 моды на русском обзор</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">Подсказки для моей карты</a>\n</p><p>\n</p><p>\n</p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">Трейлер Майнкрафт-Карты для Кейна</a>\n</p><p>\n</p><p>\n</p><p><a href=\"https://kotikot.netlify.app/page4.html#header7-x\" target=\"_blank\">3D - Ручка Myriwell RP900A|AirPen 900| Обзор на ЛУЧШУЮ (?) ручку! (+ссылка на AliExpress)|BarsTiger</a>\n</p><p>\n</p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">My Neon Intro | мое неоновое интро</a>\n</p><p>\n</p><p><a href=\"https://kotikot.netlify.app/page4.html#header7-j\" target=\"_blank\">Minecraft Drop Edit BSL Shaders FullHD 1080p (Jack Stauber-Buttercup) /дропэдит/дропедит с шейдерами</a>\n</p><p>\n</p><p><a href=\"https://kotikot.netlify.app/page4.html#header7-y\" target=\"_blank\">Minecraft Drop Edit BSL Shaders FullHD 1080p (RUDE - Eternal Youth) /дропэдит/дропедит с шейдерами</a>\n</p><p>\n</p><p><a href=\"https://kotikot.netlify.app/page4.html#header7-1q\" target=\"_blank\">Как собрать компьютер|подробный гайд|сборка пк на Ryzen 7 3700x и MSI b450 TOMAHAWK|сборка BarsTiger</a>\n</p><p>\n</p><p><a href=\"https://kotikot.netlify.app/page4.html#header7-1r\" target=\"_blank\">Мой SCRATCH-проект. Рисует по данным из таблицы</a>.\n</p><p>\n</p><p><a href=\"https://kotikot.netlify.app/page4.html#header7-1s\" target=\"_blank\">superkot2 Scratch game official e3 trailer</a>\n</p><p>\n</p><p><a href=\"https://kotikot.netlify.app/page4.html#header7-1t\">РАСПАКОВКА SSD M2 Intel 512gb и HyperX WHITE 16 gb</a>\n</p><p>\n</p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">Обзор триммера PANASONIC ER-GY60-H520 из Rozetka\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">Видеокарта Nvidia GeForce GTX 1080ti / обзор на русском\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">Процессор AMD RYZEN 7 3700x / светится боксовый кулер ?! / обзор этого монстра на русском\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">Корпус Gamemax g561 black / оно светится / обзор на русском\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">Материнская плата MSI b450 TOMAHAWK + как прошить новый БИОС без процессора / обзор на русском\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">БП Блок питания Straight Power 11 be quiet! 650 w ватт из Розетки / обзор на русском\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">Собираю свой новый компьютер - пару слов о моей сборке / ryzen 7 3700x + 1080ti / каким будет монстр\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">Огненная лампа как у AlexGyver/как сделать на Arduino+улучшенная версия/алекс гайвер туториал\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">Сколько у меня FPS в майнкрафт? / Как сделать 2000 кадров в секунду в играх?\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">Играю в Human Fall Flat.......Точнее страдаю фигней.....\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">УНИЧТОЖЬ ЭТУ КОРОБКУ ОТ КЭРИ СМИТ - ТВОРЧЕСТВО И АНТИСТРЕСС\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">моды 5 - Web Displays Minecraft - ЮТУБ В МАЙНКРАФТ нуб про троллинг моды на русском\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">ВЫ ПРОСТО ПОСМОТРИТЕ НА ЭТО/невозможный майнкрафт\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">SteveVSMobs2-битва и еда-мои первые мульты-MINEIMATOR\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">SteveVSmobs1-закончилась еда-мои первые мульты-MINEIMATOR\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">stevesHome - дом Стива - мои первые майн мультики MINEIMATOR\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">Я НАШЕЛ БАГ В МАЙНКРАФТ!/нефть в майнкрафт без модов\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">ОБЗОР МОДОВ ЛАКИ БЛОКИ МАЙНКРАФТ MINECRAFT С БАБУШКОЙ \\ самое странное видео в вашей жизни...\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">Дом нуба или про? обзор карты 2 майнкрафт minecraft ultra dirt house / хай-тек редстоун 1.12.2\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">Дом нуба или про? обзор карты 1 майнкрафт minecraft ultra dirt house / хай-тек редстоун 1.12.2\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">играю в майнкрафт в браузере\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">ОБЗОР МОДОВ 3 МАЙНКРАФТ MINECRAFT Portal и Gravity gun! | iChun нуб про троллинг моды на русском\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">ОБЗОР МОДОВ 2 МАЙНКРАФТ MINECRAFT furniture! | cryfish нуб про троллинг туториал моды на русском\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">ОБЗОР МОДОВ МАЙНКРАФТ MINECRAFT Trail mix и Derp Cats | троллинг нуб про туториал обзор\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">ОРУЖИЕ NERF zombie strike зомби страйк Rev-Reaper реврипер распаковка+обзор на русском русский\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">Распаковка Конструктора LEGO NINJAGO Огненный робот Кая (70615) из Rozetka.com.ua\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">О Канале\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">\n</a></p><p><a href=\"https://kotikot.netlify.app/page6.html\" target=\"_blank\">Распаковка планшета Asus ZenPad 3S 10 64GB Gray (Z500M-1H014A) из Rozetka.com.ua</a></p></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "s4qxC5TP2B",
+          "_anchor": "content1-4",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
